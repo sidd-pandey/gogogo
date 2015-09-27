@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.herokuapp.gogogo.Signup"
+    android:id="@+id/relativeLayout2">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gogogo"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createUser_editText"
+        android:hint="Username"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:width="200dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createPassword_editText"
+        android:width="200dp"
+        android:hint="Password"
+        android:password="true"
+        android:layout_below="@+id/createUser_editText"
+        android:layout_alignLeft="@+id/createUser_editText"
+        android:layout_alignStart="@+id/createUser_editText"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/creatEmail_editText"
+        android:layout_below="@+id/createPassword_editText"
+        android:layout_alignLeft="@+id/createPassword_editText"
+        android:layout_alignStart="@+id/createPassword_editText"
+        android:hint="Email"
+        android:minWidth="200dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/signup_btn"
+        android:layout_below="@+id/creatEmail_editText"
+        android:layout_centerHorizontal="true"
+        android:minWidth="200dp"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

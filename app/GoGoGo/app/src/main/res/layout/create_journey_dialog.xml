@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adminname"
+        android:hint="Journey Name"
+        android:minWidth="150dp"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/journey_name"
+        android:hint="Password"
+        android:singleLine="true"
+        android:password="true"
+        android:minWidth="150dp"
+        android:layout_below="@+id/adminname"
+        android:layout_alignLeft="@+id/adminname"
+        android:layout_alignStart="@+id/adminname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/journey_pass"
+        android:hint="yyyy/mm/dd"
+        android:singleLine="true"
+        android:minWidth="150dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/journey_name"
+        android:layout_alignStart="@+id/journey_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Journey Date"
+        android:id="@+id/textView"
+        android:minWidth="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/journey_name"
+        android:layout_alignLeft="@+id/journey_pass"
+        android:layout_alignStart="@+id/journey_pass"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Journey"
+        android:id="@+id/create_btn"
+        android:layout_below="@+id/journey_pass"
+        android:layout_alignLeft="@+id/journey_pass"
+        android:layout_alignStart="@+id/journey_pass" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel_btn"
+        android:layout_below="@+id/journey_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+</RelativeLayout>
